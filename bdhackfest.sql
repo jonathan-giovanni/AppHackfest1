@@ -10,7 +10,15 @@ create table admin(
 create table usuario(
 	id_user varchar(250) primary key,
 	nombre varchar(250),
-	pass varchar(250)
+	pass varchar(250),
+	telefono varchar(250)
+);
+
+create table proceso(
+	id_proceso varchar(250) primary key,
+	estado varchar(250),
+	descripcion_estado text,
+	fecha_actualizacion datetime
 );
 
 create table denuncia(
@@ -20,7 +28,13 @@ create table denuncia(
 	establecimiento varchar(250),
 	fechahora datetime,
 	persona_encargada varchar(250),
+	cargo_persona varchar(250),
 	direccion text,
-	id_user varchar(250)
-	FOREIGN KEY (id_user) REFERENCES usuario (id_user)
+	id_user varchar(250),
+	id_proceso varchar(250),
+	FOREIGN KEY (id_user) REFERENCES usuario (id_user),
+	FOREIGN KEY (id_proceso) REFERENCES proceso (id_proceso)
 );
+
+
+
