@@ -1,7 +1,7 @@
 create table admin(
 	id_admin varchar(250) primary key,
 	nombre varchar(250),
-	clave varchar(250),
+	pass varchar(250),
 	telefono varchar(250),
 	dui varchar(250),
 	cargo varchar(250)
@@ -10,17 +10,17 @@ create table admin(
 create table usuario(
 	id_user varchar(250) primary key,
 	nombre varchar(250),
-	contrasenia varchar(250),
+	pass varchar(250)
 );
 
 create table denuncia(
-	id_denun integer primary key auto_increment,
+	id_denun varchar(250) primary key,
 	titulo varchar(250),
-	contenido varchar(250),
+	contenido text,
 	establecimiento varchar(250),
-	fechahora varchar(250),
+	fechahora datetime,
 	persona_encargada varchar(250),
 	direccion text,
 	id_user varchar(250)
-	FOREIGN KEY (codlib) REFERENCES `libro` (`cod_libro`),
+	FOREIGN KEY (id_user) REFERENCES usuario (id_user)
 );
