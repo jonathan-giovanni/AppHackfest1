@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="20sp"
     android:paddingRight="20sp"
-    tools:context="org.dev4u.hv.apphackfest1.MainActivity">
-
+    tools:context="org.dev4u.hv.apphackfest1.LoginActivity">
 
     <TextView
         android:id="@+id/saludoLogin"
@@ -17,7 +16,6 @@
         android:textSize="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
     <EditText
         android:layout_marginTop="30sp"
         android:gravity="center"
@@ -27,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
+        android:inputType="textPassword"
         android:gravity="center"
         android:layout_marginTop="30sp"
         android:layout_below="@id/txtCorreoLogin"
@@ -50,4 +49,13 @@
         android:text="¿No tienes cuenta? Registrate!"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBarLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </RelativeLayout>
