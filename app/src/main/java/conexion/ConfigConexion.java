@@ -30,6 +30,9 @@ public class ConfigConexion {
     public static final String GETDenuncia = "http://" + IP + PUERTO_HOST + "/obtener_denuncia.php";
     public static final String GETProceso = "http://" + IP + PUERTO_HOST + "/obtener_tipoSangre.php";
 
+
+    public static final String RegistroUser = "http://" + IP + PUERTO_HOST + "/Registro_INSERT.php";
+
     /**
      * Clave para el valor extra que representa al identificador de una meta
      */
