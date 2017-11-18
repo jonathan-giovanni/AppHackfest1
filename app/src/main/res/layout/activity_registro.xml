@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dev4u.hv.apphackfest1.RegistroActivity">
+
+
+    <TextView
+        android:id="@+id/lblRegistroTitulo"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="Registro de Usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+
+        android:id="@+id/txtCorreoRegistro"
+        android:layout_below="@id/lblRegistroTitulo"
+        android:layout_marginTop="15sp"
+        android:gravity="center"
+        android:hint="Digita tu correo electrónico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtNombreRegistro"
+        android:layout_below="@id/txtCorreoRegistro"
+        android:layout_marginTop="15sp"
+        android:gravity="center"
+        android:hint="Digita tu nombre completo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/txtPass1Registro"
+        android:layout_below="@id/txtNombreRegistro"
+        android:layout_marginTop="15sp"
+        android:gravity="center"
+        android:hint="Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/txtPass2Registro"
+        android:layout_below="@id/txtPass1Registro"
+        android:layout_marginTop="15sp"
+        android:gravity="center"
+        android:hint="Confirmar Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/txtTelRegistro"
+        android:layout_below="@id/txtPass2Registro"
+        android:layout_marginTop="15sp"
+        android:gravity="center"
+        android:hint="Teléfono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginBottom="20sp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnRegistrar"
+        android:text="registrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBarRegistro"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
