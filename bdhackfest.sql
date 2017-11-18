@@ -38,4 +38,29 @@ create table denuncia(
 );
 
 
+insert into admin values ('gabriela260894@gmail.com', 'Gabriela Rivera', 'Prueba', '70000000', '05582706-7', 'Jefe' );
+
+insert into usuario values ('egarcia97.r@gmail.com', 'Ernesto  García ', 'Prueba', '70000000'), 
+('jonatanvasquez@gmail.com', 'Jonatan Vasquez', 'Prueba', '70000000'),
+('dimasgarcia@gmail.com', 'Dimas Garcia', 'Prueba', '70000000');
+
+
+insert into proceso values(concat('egarcia97.r@gmail.com', now()), 'Pendiente', 'Aún no ha sido verificado tu dununcia',now());
+insert into proceso values(concat('egarcia97.r@gmail.com', now()), 'Procesado', 'Tu denuncia está siendo evaluada',now());
+insert into proceso values(concat('jonatanvasquez@gmail.com', now()), 'Procesado', 'Tu denuncia está siendo evaluada',now());
+insert into proceso values(concat('jonatanvasquez@gmail.com', now()), 'Finalizada', 'Tu denuncia tuvo una respuesta favorable',now());
+insert into proceso values(concat('dimasgarcia@gmail.com', now()), 'Procesado', 'Tu denuncia está siendo evaluada',now());
+insert into proceso values(concat('dimasgarcia@gmail.com', now()), 'Finalizada', 'Tu denuncia tuvo una respuesta favorable',now());
+
+
+insert into denuncia values (concat('egarcia97.r@gmail.com', now()),'Denuncia1', 'Inter malo', 'Casa tomada', now(), now(),'Fulano', 'Gerente', 'colonia', 'egarcia97.r@gmail.com','egarcia97.r@gmail.com2017-11-18 12:14:36');
+insert into denuncia values(concat('egarcia97.r@gmail.com', now()),'Denuncia1', 'Inter malo', 'Casa tomada', now(), now(),'Fulano', 'Gerente', 'colonia', 'egarcia97.r@gmail.com','egarcia97.r@gmail.com2017-11-18 12:14:39');
+insert into denuncia values(concat('jonatanvasquez@gmail.com', now()),'Denuncia2', 'Inter pesimo', 'Casa tomada', now(), now(),'Fulano', 'Gerente', 'colonia', 'jonatanvasquez@gmail.com','jonatanvasquez@gmail.com2017-11-18 12:14:43');
+insert into denuncia values(concat('jonatanvasquez@gmail.com', now()),'Denuncia2', 'Inter favorable', 'Casa tomada', now(), now(),'Fulano', 'Gerente', 'colonia', 'jonatanvasquez@gmail.com','jonatanvasquez@gmail.com2017-11-18 12:14:46');
+insert into denuncia values(concat('dimasgarcia@gmail.com', now()),'Denuncia3', 'Comida mala', 'Anthonys', now(), now(),'Fulano', 'Gerente', 'colonia', 'dimasgarcia@gmail.com','dimasgarcia@gmail.com2017-11-18 12:14:48');
+insert into denuncia values(concat('dimasgarcia@gmail.com', now()),'Denuncia3', 'Comida buena', 'Anthonys', now(), now(),'Fulano', 'Gerente', 'colonia', 'dimasgarcia@gmail.com','dimasgarcia@gmail.com2017-11-18 12:14:51');
+
+
+
+
 
